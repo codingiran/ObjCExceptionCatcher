@@ -49,4 +49,4 @@ do {
 
 ## Acknowledgement
 
-- [Defaults](https://github.com/sindresorhus/ExceptionCatcher) - Original ExceptionCatcher
+- [ExceptionCatcher](https://github.com/sindresorhus/ExceptionCatcher) - Original implement
