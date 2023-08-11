@@ -25,7 +25,7 @@ import ObjCExceptionCatcher
 final class Foo: NSObject {}
 
 do {
-    let value = try ObjCExceptionCatcher.catch {
+    let value = try ObjCExceptionCatcher.catchException {
         return Foo().value(forKey: "nope")
     }
 

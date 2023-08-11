@@ -21,7 +21,7 @@ public enum ObjCExceptionCatcher {
      final class Foo: NSObject {}
 
      do {
-         let value = try ObjCExceptionCatcher.catch {
+         let value = try ObjCExceptionCatcher.catchException {
              return Foo().value(forKey: "nope")
          }
 
@@ -33,7 +33,7 @@ public enum ObjCExceptionCatcher {
      ```
      */
     @discardableResult
-    public static func `catch`<T>(callback: () throws -> T) throws -> T {
+    public static func catchException<T>(callback: () throws -> T) throws -> T {
         var returnValue: T!
         var returnError: Error?
 
