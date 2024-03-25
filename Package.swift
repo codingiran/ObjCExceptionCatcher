@@ -24,8 +24,8 @@ let package = Package(
         .target(
             name: "ObjCExceptionCatcher",
             dependencies: [
-                "ObjCExceptionCatcher_Private"
-            ]
-        ),
-        .target(name: "ObjCExceptionCatcher_Private")
+                "ObjCExceptionCatcher_Private",
+            ],
+            resources: [.copy("Resources/PrivacyInfo.xcprivacy")]),
+        .target(name: "ObjCExceptionCatcher_Private"),
     ])
