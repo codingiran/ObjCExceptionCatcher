@@ -5,10 +5,10 @@
 //  Created by iran.qiu on 2023/8/11.
 //
 
-@_implementationOnly import Foundation
+import Foundation
 @_implementationOnly import ObjCExceptionCatcher_Private
 
-public enum ObjCExceptionCatcher {
+public enum ObjCExceptionCatcher: Sendable {
     /**
      Catch a Objective-C exception.
 
